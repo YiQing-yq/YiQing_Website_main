@@ -4,7 +4,7 @@ $(document).mousemove(function(event){
 	var endValueX = event.pageX +200;
 	var startValueY = event.pageY;
 	var endValueY = event.pageY +200;
-	var duration = 16;
+	var duration = 16.67;
 	
 	item.animate({
 		startValueX:endValueX,
@@ -13,8 +13,8 @@ $(document).mousemove(function(event){
 		duration:duration,
 		easing:'linear',
 		step:function(){
-			item.css("left",startValueX + "px");
-			item.css("top",startValueY + "px");
+			item.css("left",-(startValueX / 3)+ "px");
+			item.css("top",-(startValueY / 3)+ "px");
 		}
 	})
-	})
+})

@@ -1,6 +1,8 @@
 .titlebox{
 	background-color: rgba(0, 0, 0, 0.45);
-	transform: translate(0%,50%);
+	height: 50rem;
+	width: 120rem;
+	transform: translate(22.5%,30%);
 	border: 4px solid #989898;
 	border-radius: 10px;
 	padding: 0.625rem;
@@ -17,7 +19,8 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	overflow: hidden;
+	overflow-y: scroll;
+	scrollbar-width: none;
 }
 
 #follow_bg{
@@ -30,11 +33,109 @@ body{
 	top: 0;
 	left: 0;
 	filter: blur(8px);
-	transform: translate(-75%,-20%);
+	/*transform: translate(-75%,-20%);*/
+	transform: translate(60%,50%);
 	background-image: url('/img/Image_1716011177383.png'); /* 替换为你的图片路径 */
     background-position: center;
 	background-repeat: repeat;
 	background-size: 1920px,1080px;
 	pointer-events: none; /* 使背景层不接收鼠标事件 */
-	z-index: -1;
+	z-index: -2;
+}
+
+.nav-box{
+	width: 20rem;
+	background-color: rgb(17, 108, 141);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	text-align: center;
+}
+
+.nav-box ul{
+	list-style: none;
+	line-height: 3.125rem;
+	font-size: 1.75rem;
+	color: #989898;
+	align-items: center;
+	text-align: center;
+	transform: translate(-10%,0%);
+}
+
+.nav-box ul .nav-block{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.nav-box ul .nav-block:hover {
+	color: #989898;
+	background-color: rgba(37, 86, 175, 0.8);
+	border-radius: 4px 4px 4px 4px;
+	transform: translate(-2%,0);
+	align-items: center;
+	text-align: center;
+	filter: blur(0.3px);
+}
+
+.nav-box ul li i{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+.nav-block.on+ul.nav-two{
+	display: block;
+	border-radius: 0px 200px 200px 0px;
+}
+
+.nav-box .nav-two{
+	display: block;
+	width: 100%;
+	font-size: 0.8125rem;
+	line-height: 2.8125rem;
+	display: none;
+	border-radius: 0px 200px 200px 0px;
+}
+
+.nav-block.on+ul.nav-two{
+	display: block;
+}
+
+.nav-box .nav-two li {
+	cursor: pointer;
+	transform: translate(-8%,0%);
+	border-radius: 3px;
+	font-size: 1rem;
+}
+
+.nav-box .nav-two li:hover{
+	background: rgb(44, 83, 126);
+}
+
+.hide-decoration{
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+}
+.center{
+	text-align: center;
+}
+
+.Text{
+	background-color: aliceblue;
+	top: 40%;
+	width: 158.6rem;
+	overflow: hidden;
+}
+.TextTitle{
+	font-size: 10rem;
+	transform: translate(20%,0);
 }
