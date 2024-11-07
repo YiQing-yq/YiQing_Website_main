@@ -1,0 +1,20 @@
+{
+  "name": "node-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.0",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "vue": "^3.5.12"
+  }
+}
