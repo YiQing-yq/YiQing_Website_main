@@ -7,46 +7,52 @@
 		<link rel="stylesheet" href="/css/def.css"/>
 		<script src="/JS/jquery.min.js"></script>
 		<script src="/JS/background.js"></script>
-		<script src="/JS/jump.js"></script>
+		<script src="/JS/jump_li.js"></script>
 	</head>
 	<body>
 		<div id="follow_bg">
 			<img src="../img/Image_1716011177383.png"/>
 		</div>
-		<div class="titlebox">
+		<div id="Welcome" class="titlebox">
 			<h1 class="title">YiQing's Website</h1>
+			<h3>Welcome to YiQing's website!</h3>
+			<h4>Add me a friend!</h4>
+			<button class="button_addfriend" onclick='location.href="http://ti.qq.com/friends/recall?uin=481285138"'><img src="../img/favicon-default.png">QQ</button>
 		</div>
 		<div class="nav-box">
 			<ul>
 				<li>
-					<div class="nav-block">
-						<a href="#follow_bg" class="hide-decoration">Main</a>
+					<div id="nav-Welcome" class="nav-block">
+						<a style="color: #99916a;" href="#Welcome" class="hide-decoration">Main</a>
 					</div>
 				</li>
 				<li>
 					<div class="nav-block">
-						<span>About</span>
+						<a style="color: #99916a;" class="hide-decoration" href="#About">About</a>
 					</div>
 				</li>
 				<li>
 					<div class="nav-block on two">
-						<span>YiQing's Friends</span>
+						<a class="nav-text-color">YiQing's Friends</a>
 					</div>
 					
 					<ul class="nav-two">
 						<li>
-							<span>蓝伊_adict</span>
+							<a class="nav-text-color">蓝伊_adict</a>
 						</li>
 						<li>
-							<span>墨鱼</span>
+							<a class="nav-text-color">墨鱼</a>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 			<div class="Text">
-				<div class="TextTitle">
-					<h2>About</h2>
+				<hr />
+				<div id="About" class="TextTitle">
+					<h1>About</h1>
+					<a></a>
+					<hr />
 				</div>
 			</div>
 	</body>
