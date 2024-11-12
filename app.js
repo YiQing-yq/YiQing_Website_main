@@ -1,6 +1,6 @@
 const express = require('express');
 var path = require('path');
-require('./js/connectdb.js');
+//require('./js/connectdb.js');
 const app = express();
 const port = 3000;
  

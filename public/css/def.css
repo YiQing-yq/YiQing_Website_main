@@ -131,12 +131,29 @@ body{
 }
 
 .Text{
+	position: sticky;
 	background-color: aliceblue;
 	width: 158.6rem;
+	z-index: -1;
 }
 .TextTitle h1{
+	position: relative;
 	font-size: 6rem;
-	transform: translate(20%,0);
+	color: rgba(31, 31, 31, 0.8);
+	left: 20%;
+}
+
+.TextTitle h2{
+	position: relative;
+	font-size: 4rem;
+	color: rgba(89, 89, 89, 0.8);
+	left: 20%;
+}
+.TextTitle a{
+	position: relative;
+	font-size: 2rem;
+	color: rgba(116, 116, 116, 0.8);
+	left: 20%;
 }
 
 .titlebox h3{
@@ -158,11 +175,25 @@ body{
 
 .button_addfriend{
 	position: absolute;
-	transform: translate(267.5%,0);
 	background-color: rgba(152, 152, 152, 0.8);
-	color: rgba(120, 110, 92, 1.0);
+	color: rgba(201, 204, 129, 1.0);
 	font-size: 50px;
 	height: 9.375rem;
 	width: 18.75rem;
 	border-radius: 40px;
+}
+
+.bimage{
+	position: absolute;
+	transform: translate(-5%,0);
+	height: 80%;
+	width: 80%;
+}
+
+.titlebox h2{
+	position: fixed;
+	font-size: 1.75rem;
+	bottom: 0;
+	left: 45%;
+	color: rgba(152, 152, 152, 0.8);
 }
